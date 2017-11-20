@@ -1,15 +1,13 @@
 Feature: help
 
-
-
 As an unexperienced user
 I want to get help about the program options
 In order to not make errors
 
 Scenario: Short Form
-	When I run `libguard -h`
+	When I run `ruby ../../bin/libguard.rb -h`
 	Then the output should contain exactly:
 		"""
 		Usage:
-			libguard -h		: show this message
+		  libguard -h     : show this message
 		"""
